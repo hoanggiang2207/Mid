@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcane Announcement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="/Movie Website/index.html" class="logo"><img src="Arcane_Title_Text.png"></a>
+        
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Netflix <span>and</span> Chill</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li>
+                    <a href="https://www.facebook.com/watch/106240794121371/565277551218159/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/arcaneshow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/arcaneshow/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="trailer.mp4.webm" controls="true"></video>
+        <img src="close.png" class="close" onclick="toggle();">
+    </div>
+    <script type="text/javascript">
+        function toggle() {
+            var trailer = document.querySelector('.trailer');
+            var video = document.querySelector('video');
+            trailer.classList.toggle('active')
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+
+    
+</body>
+
+</html>
